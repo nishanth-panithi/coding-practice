@@ -101,4 +101,4 @@ def cou(num):
         count+=1
         num//=10
     print(count)
-cou(9404)    
+cou(94004)    
