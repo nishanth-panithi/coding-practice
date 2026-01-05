@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="li" href="https://www.amazon.in/?ref_=icp_country_from_us" target="_blank">Back to amazon</a>
+    <h1>Nike black running shoes</h1>
+    <h2>$30-in stock</h2>
+    <h3>Free delivery tomorrow</h3>
+    <button class="cart">Add to Cart</button>
+    <button class="buy">Buy now</button>
+    <style>
+        .cart{
+  background-color: yellow;
+  font-weight: bolder;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition:background-color 0.15s;
+  transition: box-shadow 0.15s;
+}
+.buy{
+    background-color:rgb(230, 160, 68);
+  font-weight: bolder;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: background-color 0.15s;
+  transition: box-shadow 0.15s;
+
+}
+h2{ 
+    color: rgb(31, 164, 31);
+}
+#li:hover{
+    color: rgb(0, 170, 255);
+}
+.cart:hover
+{ background-color: rgb(255, 238, 0);
+ box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+
+}
+.cart:active{
+    opacity: 0.5;
+}
+.buy:hover
+{ background-color: rgba(255, 153, 0, 0.232);
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+}
+.buy:active{
+    opacity: 0.5;
+}
+    </style>
+</body>
+</html>

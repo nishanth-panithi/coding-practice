@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS BUS PASS</title>
+</head>
+<body>
+    <center><img src="./tghead.png"alt="telangana RTC" width="800"></center>
+    <form action="/WEB.html" autocomplete="off">
+<fieldset>
+    <legend style="background-color:rgb(39, 96, 228); color: aliceblue;">
+        APPLICANT DETAILS
+    </legend>
+<table cellpadding="6" >
+<tbody>
+<tr>
+    <td>
+        <label for="">Name:</label><sup style="color: red;">*</sup>
+        <input type="name " placeholder="Enter name"> 
+    </td>
+    <td>
+        <label for="">Father's Name:</label><sup style="color: red;">*</sup>
+        <input type="name" placeholder="Enter Father's Name">
+    </td>
+</tr>
+<tr>
+    <td>
+        <label>Date Of Birth:</label><sup style="color: red;">*</sup>
+        <input type="date" placeholder="Enter DOB">
+    </td>
+    <td>
+        <label>Gender:</label><sup style="color: red;">*</sup>
+
+        <input id="male" type="radio" name="gender" value="male" >
+        <label for="male">Male</label>
+
+        <input id="female" type="radio" name="gender" value="female" >
+        <label for="female">Female</label>
+
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="age">Age as on:</label>
+        <input id="age" type="number" name="age" placeholder="Enter age">
+    </td>
+    <td>
+        <label for="aadhar">Aadhar number:</label><sup style="color: red;">*</sup>
+        <input id="aadhar" type="text" name="aadhar" placeholder="Enter aadhar number" maxlength="12" required="">
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="whatsapp">WhatsApp number:</label> 
+        <input id="whatsapp" type="text" name="WhatsApp" placeholder="Enter WhatsApp number" maxlength="14">
+        </td>
+        <td>
+            <label for="email">Email-Id:</label><sup style="color: red;">*</sup>
+            <input id="email" type="email" name="email" placeholder="Enter email " pattern="[a-z/d._]+@gmail\.com">
+        </td>
+</tr>
+<tr>
+    <td>
+    <label for="photo">Photo:</label>
+    <input id="photo" type="file" name="photo" placeholder="upload photo">
+    </td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+<fieldset>
+    <legend style=" background-color:rgb(39, 96, 228); color: aliceblue">
+        RESIDENTIAL DETAILS
+    </legend>
+    <table  cellpadding="6" >
+        <tbody>
+            <tr>
+                <td>
+                    <label for="Address">Addres:</label><sup style="color: red;">*</sup>
+                    <input id="Addres" name="Addres" type="text" maxlength="20" placeholder="Enter Addres here" required="">
+                </td>
+                <td>
+                    <label for="distric">Distric:</label><sup style="color: red;">*</sup>
+                    <select id="distric" name="distric" required="">
+                        <option value="select"> --select--</option>
+                        <option value="select"> kahmmam</option>
+                        <option value="select"> kothagudem</option>
+                        <option value="select"> warangal</option>
+                        <option value="select"> sidipet</option>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mandal"> Mandal:</label><sup style="color: red;">*</sup>
+                    <select id="mandal" name="mandal" required="">
+                        <option value="select" > --select--</option>
+                        <option value="select" >chandrugonda</option>
+                </td>
+                <td>
+                     <label for="village"> Village:</label>
+                     <sup style="color: red;">*</sup>
+                    <select id="village" name="village" required="">
+                        <option value="select" > --select--</option>
+                        <option value="select" >ganugapadu</option>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pincode"> Pincode:</label><sup style="color: red;">*</sup>
+                    <input id="pincode" type="=text" name="pincode" placeholder="Enter your pincode" required="">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend style=" background-color:rgb(39, 96, 228); color: aliceblue">
+        PASS TYPE DERAILS
+    </legend>
+    <table  cellpadding="6">
+        <tbody>
+            <tr>
+                <td>
+                     <label for="city"> City:</label><sup style="color: red;">*</sup>
+                </td>    
+                <td> 
+                    <select id="city" name="city" required="">
+                        <option value="select" > --select--</option>
+                        <option value="select" >hyderabad</option>
+                </td>
+            </tr>    
+            <tr>
+                 <td>
+                     <label for="passtype"> Pass Type:</label><sup style="color: red;">*</sup>
+                </td>    
+                <td> 
+                    <select id="passtype" name="passtype" required="">
+                        <option value="select" > --select--</option>
+                        <option value="select" >local bus pass</option>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>
+<br>
+<center><input type="submit"></center>
+</form>
+</body>
+</html>

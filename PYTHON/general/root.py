@@ -1,0 +1,7 @@
+a=int(input('enter a value='))
+b=int(input('enter b value='))
+c=int(input('enter c value='))
+d=((b**2)-4*a*c)**(0.5)
+root1=(-b+d)/(2*a)
+root2=(-b-d)/(2*a)
+print(f"roots({root1},{root2})")

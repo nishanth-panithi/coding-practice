@@ -1,5 +1,5 @@
-#add 2 numbers using function
-#return, defalt args
+#add 2 numbers using function and return
+#defalt args
 '''
 def add (a=10,b=20):
    return a+b
@@ -8,23 +8,24 @@ print(add())  '''
 #positional args
 '''
 def add(a,b):
-    print(a+b)
+    return a+b
 add(10,20)   '''
 
 #keyword args
 '''
 def add(a,b):
-    print(a+b)
+    return a+b
 add(b=20,a=10)
 '''
 #factorial
-'''
+
 def fac(n):
+    f=1    
     for i in range(1,n+1):
-       f=n*i
+       f*=i
     print(f)
-fac(5)
-'''
+fac(6)
+
 #square of a number
 '''
 def sq(n):
@@ -95,10 +96,11 @@ def rev(num):
     print(res)
 rev(123)     '''
 #count digits in a num
+'''
 def cou(num):
     count=0
     while num!=0:
         count+=1
         num//=10
     print(count)
-cou(94004)    
+cou(94004)    '''

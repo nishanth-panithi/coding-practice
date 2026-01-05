@@ -1,0 +1,7 @@
+marks=input("enter values")
+a,b,c=marks.split( )
+a=int(a)
+b=int(b)
+c=int(c)
+print("total marks:", a+b+c)
+print("average marks:", (a+b+c)/3)
