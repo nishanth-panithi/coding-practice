@@ -18,14 +18,14 @@ def add(a,b):
 add(b=20,a=10)
 '''
 #factorial
-
+'''
 def fac(n):
     f=1    
     for i in range(1,n+1):
        f*=i
     print(f)
 fac(6)
-
+'''
 #square of a number
 '''
 def sq(n):
@@ -41,7 +41,8 @@ def lar(a,b):
         print(b,"is larger than",a)
     else:
         print("both are")        
-lar(10,20)'''
+lar(10,20)
+'''
 #find even or odd
 '''
 def eo(num):

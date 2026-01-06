@@ -8,42 +8,29 @@ for i in list:
     acs=ord(s)
     if acs>=97 and acs<=122:
         lc.append(s)
-    elif acs>=65 and acs<=90:
-       uc.append(s)  
+    elif acs>=65 and acs<=90:  
+       uc.append(s)
     else:
         rem+=int(s)
 l="".join(lc)   
 u="".join(uc)     
-print(f"{rem} is sum of num in list. {u} are in uc. {l} are in lc")     ''' 
-#matrix multiplication 
+print(f"{rem} is sum of num in list. {u} are in uc. {l} are in lc")      '''
+#square
 '''
-# mat1=[[5,8],
-#       [1,2]]       #5x4+8x9  5x3+8x7
-# mat2=[[4,3],
-#       [9,7]]       #1x4+2x9  1x3+2x7
-mat1=[[5,8,2],
-      [1,2,4]]
-mat2=[[4,3],
-      [9,7],
-      [2,3]]
-posible=True
-for x in mat1:
-    if len(x)!=len(mat2):
-        posible=False
-for y in mat2:
-    if len(y)!=len(mat1):
-        posible=False
-if posible:
-    for i in range(len(mat1)):
-        row = []
-        for j in range(len(mat2[0])):
-            s = 0
-            for k in range(len(mat2)):  # or len(mat1[0])
-                s += mat1[i][k] * mat2[k][j]
-            row.append(s)
-        print(row)
+m=[[1,2],
+   [3,4]]
+sqr=True
+for i in m:
+    if len(m)==len(i):
+        pass
+    else:
+        sqr=False
+        break
+if sqr:
+    print("given matrix is sqr")
 else:
-    print("not posible to perfome")'''
+    print("given matrix is not sqr")
+'''
 #matrix add condition check
 '''
 m1=[[1,2],
@@ -61,24 +48,9 @@ else:
 if cond:
     print("both are in same dimentoins")
 else:
-    print("both are not in same dimentoins")'''
-#square
+    print("both are not in same dimentoins")
 '''
-m=[[1,2],
-   [3,4]]
-sqr=True
-for i in m:
-    if len(m)==len(i):
-        pass
-    else:
-        sqr=False
-        break
-if sqr:
-    print("given matrix is sqr")
-else:
-    print("given matrix is not sqr")
-'''
-#
+# 3*2 => 2*3
 '''
 mat=[[1,2],
      [3,4],
@@ -89,4 +61,39 @@ for i in range(len(mat[0])):
     for j in range(len(mat)):
         row.append(mat[j][i])
     res.append(row)
-print(res)'''
+print(res) 
+'''
+#matrix multiplication 
+
+# # mat1=[[5,8],
+# #       [1,2]]       #5x4+8x9  5x3+8x7
+# # mat2=[[4,3],
+# #       [9,7]]       #1x4+2x9  1x3+2x7
+# mat1=[[5,8,2],
+#       [1,2,4]]
+# mat2=[[4,3],
+#       [9,7],
+#       [2,3]]
+# posible=True
+# for x in mat1:
+#     if len(x)!=len(mat2):
+#         posible=False
+# for y in mat2:
+#     if len(y)!=len(mat1):
+#         posible=False
+# if posible:
+#     res=[]
+#     for i in range(len(mat1)):
+#         row = []
+#         for j in range(len(mat2[0])):
+#             sum = 0
+#             for k in range(len(mat2)):  # or len(mat1[0])
+#                 sum += mat1[i][k] * mat2[k][j]
+#             row.append(sum)
+#         res.append(row)
+#     print(res)
+# else:
+#     print("not posible to perfome")
+
+# #
+

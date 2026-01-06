@@ -1,4 +1,4 @@
-#*** second largest number in a list with using a max method
+#*** second largest number in a list with out using a max method
 '''
 list=[79,100,12,78,34,44]
 max1=max2=0
@@ -11,14 +11,15 @@ for j in list:
 print(max2)'''
 #nth largest num using max method
 '''
-def highest(num,pos):
+def nmax(num,pos):
     if len(num)<pos:
         return "not possible"
     else:
-        for i in range(1,pos):
+        for i in range(1,pos): #removes max element from the list pos-1 times
             num.remove(max(num))
-        return max(num)
-print(highest([34,44,45,87,57,67,23,49,24],5))'''
+        return max(num) 
+print(nmax([34,44,45,87,57,67,23,49,24],5))
+'''
 #in a simple way
 '''
 pos=2
@@ -27,13 +28,19 @@ for i in range(pos-1):
     num.remove(max(num))
 print(max(num))'''
 #remove dublicates numbers
+
+# num=[3,6,2,8,3,7,3,4,5,3,5,4,4,7,7,6,5,3,3,4,5,6,8,0,5,3,3,0,9]
+# fin=set(num)
+# num=list(fin)
+# print(num)
 '''
 num=[3,6,2,8,3,7,3,4,5,3,5,4,4,7,7,6,5,3,3,4,5,6,8,0,5,3,3,0,9]
 unq=[]
 for i in num:
     if i not in unq:
         unq.append(i)
-print(unq)'''
+print(unq)
+'''
 #max num with out using a max method
 '''
 num=[3,6,2,3,7,3,4,5,3,5,4]
@@ -100,3 +107,4 @@ for i in nested:
         maxval=temp
         maxlist=i
 print(maxval,maxlist)'''
+
