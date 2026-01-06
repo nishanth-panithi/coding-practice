@@ -10,3 +10,4 @@ if count==10:
     print("valid")
 else:
     print("number not valid")
+    print("number not valid")

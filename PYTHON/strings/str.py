@@ -286,3 +286,4 @@ while i<len(word):
     # e 4
     res+=(word[j]+str(count))
 print(res)
+print(res)
