@@ -25,7 +25,6 @@ class Cat(Animal):
     def Sound(self):
         print(f"Cat makes {self.sound} sounds")
 
-
 dog=Dog(name="scooby",sound="woof!")
 cat=Cat(name="tommy",sound="meaw!")
 dog.eat()

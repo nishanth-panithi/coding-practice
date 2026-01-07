@@ -1,16 +1,19 @@
-# class mobile:
-#     fetures={"battery":"5000mah-24w","display":"oled","processor":"8gen+","ip":"68","Bcamera":"48mp-4K60fps","Fcamera":"24mp-4k30fps"}
-# m1=mobile()
-# print(m1.fetures)
-#
-# class mobile:
-#     fetures={"battery":"5000mah-24w","display":"oled","processor":"8gen+","ip":"68","Bcamera":"48mp-4K60fps","Fcamera":"24mp-4k30fps"}
-#     def creat(s):
-#         return "mobile is ready"
-# m1=mobile()
-# print(m1.creat())
-# print(mobile().creat())
-# print(m1.fetures)
+class mobile:
+    fetures={"battery":"5000mah-24w","display":"oled","processor":"8gen+","ip":"68","Bcamera":"48mp-4K60fps","Fcamera":"24mp-4k30fps"}
+m1=mobile()
+print(m1.fetures)
+###
+
+class mobile:
+    fetures={"battery":"5000mah-24w","display":"oled","processor":"8gen+","ip":"68","Bcamera":"48mp-4K60fps","Fcamera":"24mp-4k30fps"}
+    def creat():
+        return "mobile is ready"
+m1=mobile()
+print(m1.creat())
+print(mobile().creat())
+print(m1.fetures)
+###
+
 class mobile:
     def __init__(self,price,battery,display,processor,ip,bc,fc):
         self.price=price

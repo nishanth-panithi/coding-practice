@@ -1,9 +1,9 @@
 
-class car: #class
+class Car: #class
 
     # class = (blueprint) used to design the structure and layout of object.
 
-    type="GT car"     #class varables
+    type="GT CAR"     #class varables
     number_of_cars=0
 
     #class varable = * shared class varable among all instances (objects) of a class.
@@ -22,17 +22,18 @@ class car: #class
         self.color=color
         self.milage=milage
         self.for_sale=for_sale
-        car.number_of_cars+=1  #class varables using inside the constructor.
-        # attributes = * is a "varables" that are defined in class.
-        #         v *  attributes are actions that are objects can perform.
+        Car.number_of_cars+=1  #class varables using inside the constructor.
+
+        # attributes = is a "varables" that are defined in class.
+        #              attributes are actions that are objects can perform.
 
     def start(self): # methods (functions)
-        print(f"you are start a {self.color} {self.model} {car.type}")
+        print(f"you are start a {self.color} {self.model} {Car.type}")
     def stop(self):
-        print(f"you are stop a {self.color} {self.model} {car.type}")
+        print(f"you are stop a {self.color} {self.model} {Car.type}")
     def describe(self):
         #  instance varable, instance varable,        class varable
-        print(f"{self.color} {self.model} {self.year} {car.type}")
+        print(f"{self.color} {self.model} {self.year} {Car.type}")
 
-    # method = * is a "functoin" that are defined in class.
-    #          *  methods are actions that objects can perform.
+    # method = is a "functoin" that are defined in class.
+    #          methods are actions that objects can perform.

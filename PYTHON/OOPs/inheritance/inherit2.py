@@ -1,7 +1,7 @@
 #Multiple Inheritance=inherit from more than one parent
 #                     C(A,B)
 #Multilevel Inheritance=inherit from a parent which inherits from another parent
-#                       A->B(A)->C(B)
+#                   A->B(A)->C(B)
 
 class Vehicle():
     def __init__(self,name):
