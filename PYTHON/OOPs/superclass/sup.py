@@ -9,8 +9,8 @@ class shape:
         print(f"it is {self.color} and {'filled' if self.is_filled else 'not filled'}")
 class Circle(shape):
     def __init__(self,color,is_filled,radius):
-        super().__init__(color,is_filled) #or shape.__init__(color,is_filled) 
         self.radius=radius
+        super().__init__(color,is_filled) #or shape.__init__(self,color,is_filled) 
         super().discribe()
     def discribe(self):
         print(f"it is a circle with area of {3.24*self.radius*self.radius}cm")

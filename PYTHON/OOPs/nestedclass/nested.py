@@ -6,17 +6,18 @@
 #         Encapsulates private details that aren't related outside of the outer class
 #         Keeps the namespace clean;reduses the possibility of naming conflicts
 
-# class employee:
-#     print("class 1")
-# class employee:
-#     print("class 2")    # this creates naming conflicts while importing from another files, we may not know there are 2 class
+class employee:
+    print("class 1")
+class employee:
+    print("class 2")    # this creates naming conflicts while importing from another files, we may not know there are 2 class
 
-# class company1:
-#     class employee:
-#         print("class 1")
-# class company2:
-#     class employee:
-#         print("class 2")
+class company1:
+    class employee:
+        print("class 1")
+class company2:
+    class employee:
+        print("class 2")     # Keeps the namespace clean, reduses the possibility of naming conflicts.
+
 
 ################################################################
 

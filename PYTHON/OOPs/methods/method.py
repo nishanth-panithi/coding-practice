@@ -1,9 +1,10 @@
-#Static Methods= A method that belong to a class rather than any obkect from the class (instance)
-#                Usually used to geneal utility functions
-#
-# Instance methods= Best for opperations on instances of he class (objects)
+#Types of methods
+# Instance methods= Best for opperations on instances of the class (objects)
 # Static Methods= Best for utility functions that do not need access the class data
 # Class Methods= Best for class-level data or requires to the class itself
+#
+#Static Methods= A method that belong to a class rather than any object from the class (instance)
+#                Usually used to geneal utility functions
 
 class Employee:
     def __init__(self,name,position):

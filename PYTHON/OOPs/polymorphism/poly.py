@@ -7,15 +7,15 @@
 
 #   1. Inheritance
 
-# class Dog():
-#     def sound(self):
-#         print("woof!")
-# class Cat():
-#     def sound(self):
-#         print("meaw!")
+class Dog():
+    def sound(self):
+        print("woof!")
+class Cat():
+    def sound(self):
+        print("meaw!")
 
-# for animal in (Dog(),Cat()):
-#     animal.sound()
+for animal in (Dog(),Cat()):
+    animal.sound()
 
 ####################################################  
 
@@ -38,7 +38,7 @@ for shape in shapes:
 
 ####################################################  
 
-#2. Duck Typing= Anotherd way to achieve polymorphism besides Inheritence
+#2. Duck Typing= Another way to achieve polymorphism besides Inheritence
 #                objectes must have the minimum necessary attributes/methods
 #                "if it looks like a duck and quacks like a duck, it must be a duck"
 
